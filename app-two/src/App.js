@@ -31,15 +31,17 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>This is APP TWO</p>
-
-          <br />
-          <a className="App-link" href="/root">
-            Go to Back to the Root App
+          <a className="App-link" href="/">
+            Go to App One
           </a>
           <br />
-          <a className="App-link" href="/one">
-            Go to App One
+
+          <h1>This is APP TWO</h1>
+
+          <br />
+
+          <a className="App-link" href="/three">
+            Go to App Three
           </a>
         </header>
       </div>

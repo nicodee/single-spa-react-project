@@ -1,11 +1,14 @@
 import { registerApplication, start } from 'single-spa';
 import * as serviceWorker from './serviceWorker';
 
+import './app.three';
+
 registerApplication(
-    'root',
-    () => import('./root.app.js'),
+    'three',
+    () => import('./app.three.js'),
     () => true
 );
+
 
 start();
 // If you want your app to work offline and load faster, you can change

@@ -10,9 +10,9 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "root": "http://localhost:3030/static/js/main.js",
           "appOne": "http://localhost:3032/static/js/main.js",
           "appTwo": "http://localhost:3031/static/js/main.js",
+          "appThree": "http://localhost:3033/static/js/main.js",
           "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@4.3.7/lib/system/single-spa.min.js"
         }
       }
@@ -31,19 +31,19 @@
     <script>
         System.import('single-spa').then(function (singleSpa) {
             singleSpa.registerApplication(
-                'root',
-                () => System.import('root'),
-                location => location.pathname.startsWith('/root')
-            );
-            singleSpa.registerApplication(
                 'appOne',
-                () => System.import('appOne'),
-                location => location.pathname.startsWith('/one')
+                () => System.import('appOne').default,
+                location => location.pathname.startsWith('/')
             );
             singleSpa.registerApplication(
                 'appTwo',
-                () => System.import('appTwo'),
+                () => System.import('appTwo').default,
                 location => location.pathname.startsWith('/two')
+            );
+            singleSpa.registerApplication(
+                'appThree',
+                () => System.import('appThree').default,
+                location => location.pathname.startsWith('/three')
             );
             singleSpa.start();
         })

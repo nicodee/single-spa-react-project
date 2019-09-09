@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 
-const ASSET_PATH = process.env.ASSET_PATH || 'http://localhost:3030/';
+const ASSET_PATH = process.env.ASSET_PATH || 'http://localhost:3033/';
 
 module.exports = {
   webpack: {

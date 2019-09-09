@@ -7,7 +7,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br>
-Open [http://localhost:3030](http://localhost:3030) to view it in the browser.
+Open [http://localhost:3032](http://localhost:3032) to view it in the browser.
 
 ### `npm test`
 
@@ -18,7 +18,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.<br>
 
-### `npx serve -s -l 3030 build`
+### `npx serve -s -l 3032 build`
 
-Serves the build folder at `http://localhost:3030`
+Serves the build folder at `http://localhost:3032`
 
