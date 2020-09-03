@@ -52,7 +52,7 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^3.0.1",
     "sanitize-html": "^1.18.2",
-    "serve": "^6.4.1",
+    "serve": "^10.1.2",
     "single-spa": "^4.3.5",
     "single-spa-react": "^2.10.2",
     "styled-components": "^4.1.3",
